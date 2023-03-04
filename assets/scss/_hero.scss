@@ -10,7 +10,7 @@ main {
         width: 370px;
         border-radius: 20px;
         margin: 0 1rem;
-        background: no-repeat url('/assets/images/bg-pattern-card.svg') white;
+        background: no-repeat url("../assets/images/bg-pattern-card.svg") white;
         background-position: top;
         background-size: contain;
 
@@ -19,12 +19,10 @@ main {
             content: '';
             width: 300%;
             aspect-ratio: 1/1;
-            background: no-repeat url("/assets/images/bg-pattern-top.svg");
+            background: no-repeat url("../assets/images/bg-pattern-top.svg");
             background-size: contain;
             transform: translate(-51%, -39%);
             z-index: -1;
-            // border: 1px solid red;
-            // border-radius: 50%;
         }
 
         &::after {
@@ -32,13 +30,10 @@ main {
             content: '';
             width: 300%;
             aspect-ratio: 1/1;
-            background: no-repeat url("/assets/images/bg-pattern-bottom.svg");
+            background: no-repeat url("../assets/images/bg-pattern-bottom.svg");
             background-size: contain;
             transform: translate(45%, 52%);
             z-index: -1;
-            // border: 1px solid red;
-            // border-radius: 50%;
-
         }
 
         &__profile {
