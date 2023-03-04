@@ -1,0 +1,87 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .card {
+        position: relative;
+        width: 370px;
+        border-radius: 20px;
+        margin: 0 1rem;
+        background: no-repeat url('/assets/images/bg-pattern-card.svg') white;
+        background-position: top;
+        background-size: contain;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 300%;
+            aspect-ratio: 1/1;
+            background: no-repeat url("/assets/images/bg-pattern-top.svg");
+            background-size: contain;
+            transform: translate(-51%, -39%);
+            z-index: -1;
+            // border: 1px solid red;
+            // border-radius: 50%;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 300%;
+            aspect-ratio: 1/1;
+            background: no-repeat url("/assets/images/bg-pattern-bottom.svg");
+            background-size: contain;
+            transform: translate(45%, 52%);
+            z-index: -1;
+            // border: 1px solid red;
+            // border-radius: 50%;
+
+        }
+
+        &__profile {
+            position: relative;
+            margin-top: 5rem;
+            gap: 10px;
+            color: $Dark-grayish-blue;
+
+            img {
+                border-radius: 50%;
+                border: 7px solid #fff;
+            }
+
+            h1 {
+                color: $Very-dark-desaturated-blue;
+
+                span {
+                    color: $Dark-grayish-blue;
+                }
+            }
+
+        }
+
+        hr {
+            // height: 2px;
+            width: 100%;
+            margin: 29px 0;
+        }
+
+        &__social {
+            width: 90%;
+            margin-bottom: 29px;
+            text-align: center;
+
+            p {
+                color: $Dark-gray;
+
+                span {
+                    color: $Very-dark-desaturated-blue;
+                    font-weight: $fw-md;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
